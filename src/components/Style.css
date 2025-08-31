@@ -5,13 +5,6 @@
 .card:hover {
   transform: translateY(-8px);
 }
-.app-bg {
-  min-height: 100vh;
-  background: linear-gradient(to right, #000000,#0d0d0d, #d38909, #6e695020);
-
-  color: #fff;
-}
-
 
 h1{text-align: center;
  color: #fff;
