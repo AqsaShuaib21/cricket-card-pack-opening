@@ -1,12 +1,25 @@
-# React + Vite
+<!-- Card Pack Opening Game -->
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project builds on the React + Vite template to create a dynamic, game-inspired card pack opening experience. It mimics the thrill of FIFA-style pack reveals using animated transitions, toast notifications, and randomized player cards.
 
-Currently, two official plugins are available:
+<!-- Features -->
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Pack Selection UI: Choose from multiple themed packs like Silver, Gold, Bronze, Rare Gold, Future Stars, and Rare Silver.
 
-## Expanding the ESLint configuration
+Pack Opening Animation: Clicking "Open Pack" triggers a toast and navigates to a reveal screen with suspenseful transitions.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+Player Reveal Grid: Players are hidden until clicked, simulating RNG-based discovery.
+
+Responsive Layout: Built with Bootstrap for mobile-friendly design.
+
+Routing: React Router handles navigation between pack overview and detail views.
+
+<!-- RNG Logic -->
+
+Each pack contains a predefined array of player cards. When a pack is opened:
+
+The app navigates to a detail page using the pack’s id.
+
+Players are displayed but hidden until clicked.
+
+Clicking reveals the player image, simulating randomness and excitement.
